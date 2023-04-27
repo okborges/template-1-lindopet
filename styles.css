@@ -100,6 +100,7 @@ header{
     margin-top: 2rem;
     font-style: normal;
     font-weight: 400;
+    line-height: 30px;
 }
 
 .quemsomos button{
@@ -113,6 +114,7 @@ header{
     margin: 0 auto;
     margin-top: 2rem;
     margin-bottom: 1rem;
+    filter: drop-shadow(0 0.5rem 0.5rem #afafaf)
 }
 
 @media only screen and (max-width:414px){
@@ -124,6 +126,7 @@ header{
    }
    .quemsomos h2{
     font-size: 20px;
+    line-height: 20px;
    }
    .quemsomos button{
     width: 180px;
