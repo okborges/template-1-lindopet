@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@600&display=swap');
 
 *{
     padding:0;
@@ -9,35 +9,15 @@
     list-style: none;
 }
 
-.home{
-    background-image: url(assets/background1.png);
-    background-position: center;
-    background-size: 120%;
-    padding-bottom: 39.4%;
-    background-repeat: no-repeat;
-}
-
 header{
     display: flex;
     justify-content: space-around;
+    background-color: #F5B700;
 }
 .logo{
     display: flex;
     padding-left: 20px;
-}
-.logo h1{
-    font-family: 'Saira', sans-serif;
-    font-weight: 700;
-    font-size: 47.05px;
-    Line-height: 74px;
-    padding-top: 52px;
-    color: #F9F5EA;
-
-}
-.logo img{
-    padding-top: 2%;
-    padding-left: 0%;
-    width: 70px;
+    padding-top: 18px;
 }
 .links{
     padding-top: 61px;
@@ -49,4 +29,50 @@ header{
     Line-height: 38px;
     padding-left: 10px;
     color: #F9F5EA;
+}
+
+@media only screen and (max-width:414px){
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo{
+        margin: 0 auto;
+    }
+    .logo img{
+       width: 139.5px;
+       height: 62px;
+    }
+    .links{
+        padding-top: 10px;
+        text-align: center;
+        padding-bottom: 5px;
+    }
+    .links a{
+        font-size: 16px;
+        padding-left: 5px;
+        line-height: 0px;
+    }
+}
+
+@media only screen and (min-width:415px) and (max-width: 1024px){
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo{
+        margin: 0 auto;
+    }
+    .logo img{
+       width: 160px;
+       height: 82.5px;
+    }
+    .links{
+        padding-top: 10px;
+        text-align: center;
+        padding-bottom: 5px;
+    }
+    .links a{
+        line-height: 0px;
+    }
 }
